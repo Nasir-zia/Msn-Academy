@@ -1,0 +1,7 @@
+.background_image {
+  background-image: url('/16.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+    overflow: hidden; 
+    height:467px
+}

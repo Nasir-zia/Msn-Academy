@@ -1,0 +1,7 @@
+.background_image {
+  background-image: url('/background22.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+    overflow: hidden; 
+  height:500px
+}

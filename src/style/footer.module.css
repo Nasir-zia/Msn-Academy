@@ -1,0 +1,10 @@
+.footer_background {
+  background-image: url('/background22.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 489px;
+  height: auto;
+  width: 100%;
+}
+
