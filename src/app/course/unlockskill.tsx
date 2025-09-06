@@ -17,7 +17,7 @@ function UnlockSkill() {
             real-world challenges, ensuring you gain practical skills that
             employers value.
           </p>
-          <button className="px-6 py-3 bg-slate-600 text-white font-medium rounded-lg">
+          <button className="px-6 py-3 bg-slate-200 text-black font-medium rounded-lg">
             Learn more
           </button>
         </div>

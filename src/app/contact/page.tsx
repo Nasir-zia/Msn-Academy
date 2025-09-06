@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import EnrollNavbar from "../enrollnavbar";
+import EnrollNavbar from "../../enrollnavbar/enrollnavbar";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Footer from "../component/footer/footer";
 

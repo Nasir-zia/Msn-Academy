@@ -2,8 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { FaStar, FaCheck } from "react-icons/fa";
-import EnrollNavbar from "../enrollnavbar";
-import Footer from "../component/footer/footer";
+import EnrollNavbar from "../../../enrollnavbar/enrollnavbar";
+import Footer from "../../component/footer/footer";
 
 export default function UIUXPage() {
   return (
@@ -112,7 +112,7 @@ export default function UIUXPage() {
             <div className="border-2 p-4 h-96">
               <div className="relative w-full h-48 mb-4">
                 <Image
-                  src="/uiux_course.png"
+                  src="/uiux.webp"
                   alt="UI/UX Design Course"
                   fill
                   className="object-cover rounded-lg"

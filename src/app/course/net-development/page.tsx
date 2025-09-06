@@ -2,23 +2,23 @@
 import React from "react";
 import Image from "next/image";
 import { FaStar, FaCheck } from "react-icons/fa";
-import EnrollNavbar from "../enrollnavbar";
-import Footer from "../component/footer/footer";
+import EnrollNavbar from "../../../enrollnavbar/enrollnavbar";
+import Footer from "../../component/footer/footer";
 
-export default function MobileDevPage() {
+export default function DotNetPage() {
   return (
     <>
       <EnrollNavbar />
       <section className="bg-slate-50">
-        <div className="max-w-6xl mx-auto px-4 py-8 bg-slate-50">
-          {/* Breadcrumb */}
-          <p className="text-gray-600 text-sm mb-2">Courses &gt; Mobile Development</p>
+        <div className="max-w-6xl mx-auto  px-4 py-8">
+          <p className="text-gray-600 text-sm mb-2">Courses &gt; .NET Development</p>
 
           {/* Title + Subtitle */}
-          <h1 className="text-2xl font-bold text-gray-600 mb-2">Mobile App Development</h1>
+          <h1 className="text-2xl font-bold text-gray-600 mb-2">.NET Development</h1>
           <p className="text-gray-600 mb-6">
-            Master mobile app development with hands-on training in Flutter, React Native, and Kotlin. 
-            Learn to build high-performance iOS and Android applications with modern frameworks and tools.
+            Learn to build enterprise-level web, desktop, and cloud applications using
+            Microsoft .NET framework, C#, and ASP.NET Core. Gain practical skills to
+            develop secure, scalable, and modern applications.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -61,37 +61,37 @@ export default function MobileDevPage() {
                   {
                     title: "Course Overview",
                     content:
-                      "This course covers Flutter, React Native, Kotlin, and Swift. You’ll learn UI design, API integration, state management, and publishing apps to App Store and Google Play.",
+                      "This course covers C#, ASP.NET Core, Entity Framework, and MVC architecture. You’ll also learn database integration, API development, and deployment strategies for .NET applications.",
                   },
                   {
                     title: "Learning Outcomes",
                     content:
-                      "By the end of this course, you’ll be able to develop cross-platform apps, integrate backend APIs, and optimize apps for performance. You’ll also have a portfolio of mobile projects.",
+                      "By the end of this course, you’ll be able to develop full-stack .NET applications, design scalable architectures, and build secure APIs. You’ll also have a portfolio of projects to showcase.",
                   },
                   {
                     title: "Target Audience",
                     content:
-                      "This course is designed for aspiring mobile developers, software engineers, and anyone looking to build modern iOS and Android applications.",
+                      "This course is ideal for beginners in programming, software developers, and IT professionals looking to enhance their skills in .NET and enterprise application development.",
                   },
                   {
                     title: "Course Duration",
                     content:
-                      "The course runs for 12 weeks, including live coding sessions, assignments, and project work. Flexible learning paths are available for students and professionals.",
+                      "The course runs for 10 weeks, with live coding sessions, video tutorials, and real-world projects. Flexible learning options are available for working professionals.",
                   },
                   {
                     title: "Enrollment Fee",
                     content:
-                      "The total fee for the course is $60. This includes mentorship, project reviews, and certification upon completion. A 30-day money-back guarantee is included.",
+                      "The total fee for the course is $55. This includes live mentorship, project reviews, and certification upon completion. A 30-day money-back guarantee is included.",
                   },
                   {
                     title: "Instructor Profile",
                     content:
-                      "Our instructors are experienced mobile developers who have worked on apps with millions of downloads. They bring real-world experience and best practices to the classroom.",
+                      "Our instructors are Microsoft-certified professionals with years of experience building enterprise .NET applications. They provide practical insights and industry best practices.",
                   },
                   {
                     title: "Student Testimonials",
                     content:
-                      "Our students have published successful apps on App Store and Play Store, and many are working as mobile developers in startups and tech companies.",
+                      "Our students have successfully launched their careers as .NET developers in tech companies and enterprise organizations. They highlight the course’s project-based learning and strong mentor support.",
                   },
                 ].map((item, i) => (
                   <details
@@ -108,18 +108,18 @@ export default function MobileDevPage() {
             </div>
 
             {/* Right Column */}
-            <div className="border-2 rounded-lg p-4 h-96 ">
+            <div className="border-2 p-4 h-96">
               <div className="relative w-full h-48 mb-4">
                 <Image
-                  src="/mobile.jpg"
-                  alt="Mobile App Development Course"
+                  src="/OIP.webp"
+                  alt=".NET Development Course"
                   fill
                   className="object-cover rounded-lg"
                 />
               </div>
-              <p className="text-gray-600 font-semibold">PKR 60</p>
+              <p className="text-gray-600 font-semibold">PKR 55</p>
               <p className="flex items-center text-sm text-gray-600 mb-4">
-                <FaStar className="text-yellow-500 mr-1" /> 4.7 (210 reviews)
+                <FaStar className="text-yellow-500 mr-1" /> 4.6 (195 reviews)
               </p>
               <button className="w-full bg-[#021533] text-white py-2 rounded hover:bg-[#03224d] mb-2">
                 Get started

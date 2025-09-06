@@ -16,26 +16,26 @@ export default function EnrollNavbar() {
 
   return (
     <header
-      className=" top-0 z-50 bg-cover bg-center"
+      className="top-0 z-50 bg-cover bg-center"
       style={{
         backgroundImage: "url(/background22.png)",
       }}
     >
       {/* Navbar */}
-      <nav className="flex items-center justify-evenly max-w-7xl mx-auto w-full">
+      <nav className="flex items-center justify-between px-4 py-2  mx-auto">
         {/* Left: Logo */}
         <div className="flex-shrink-0">
           <Image
             src="/logo.png"
             alt="Academy Logo"
-   width={90}             
-  height={80} 
-              priority
+            width={90}
+            height={80}
+            priority
           />
         </div>
 
-        {/* Center: Navigation */}
-        <ul className="hidden md:flex flex-1 justify-center space-x-8 font-medium">
+        {/* Center: Navigation (Desktop Only) */}
+        <ul className="hidden md:flex flex-1 justify-center space-x-8">
           {navItems.map((item) => (
             <li key={item.name}>
               <Link
@@ -51,7 +51,7 @@ export default function EnrollNavbar() {
         {/* Right: Buttons + Mobile Toggle */}
         <div className="flex items-center space-x-4">
           <a
-            href="https://forms.gle/your-form-link"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScLf7NGfdYzBaIkk9D7PqKQExWMwjxPnoxZ5Rz6SVzH5GPQog/viewform?usp=send_form"
             target="_blank"
             rel="noopener noreferrer"
           >

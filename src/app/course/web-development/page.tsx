@@ -2,8 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { FaStar, FaCheck } from "react-icons/fa";
-import EnrollNavbar from "../enrollnavbar";
-import Footer from "../component/footer/footer";
+import EnrollNavbar from "../../../enrollnavbar/enrollnavbar";
+import Footer from "../../component/footer/footer";
 
 export default function WebDevPage() {
   return (
@@ -112,7 +112,7 @@ export default function WebDevPage() {
             <div className="border-2 h-96 p-4 ">
               <div className="relative w-full h-48 mb-4">
                 <Image
-                  src="/webdev_course.png"
+                  src="/web.png"
                   alt="Web Development Course"
                   fill
                   className="object-cover rounded-lg"

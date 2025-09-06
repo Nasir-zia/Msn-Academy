@@ -16,7 +16,7 @@ const courses = [
     rating: 4.5,
     reviews: 231,
     button: "Enroll Now",
-    link: "/ui-ux-design",
+    link: "/course/ui-ux-design",
   },
   {
     title: "Web Development",
@@ -25,7 +25,7 @@ const courses = [
     rating: 4.5,
     reviews: 231,
     button: "Enroll Now",
-    link: "/web-development",
+    link: "/course/web-development",
   },
   {
     title: "Mobile App Development",
@@ -34,7 +34,7 @@ const courses = [
     rating: 4.5,
     reviews: 231,
     button: "Enroll Now",
-    link: "/mobile-development",
+    link: "/course/mobile-development",
   },
   {
     title: "Data Analyst",
@@ -43,7 +43,7 @@ const courses = [
     rating: 4.5,
     reviews: 231,
     button: "Enroll Now",
-    link: "/data-analyst",
+    link: "/course/data-analyst",
   },
   {
     title: ".Net Backend Development",
@@ -52,7 +52,7 @@ const courses = [
     rating: 4.5,
     reviews: 231,
     button: "Enroll Now",
-    link: "/net-development",
+    link: "/course/net-development",
   },
 ];
 
@@ -64,26 +64,26 @@ export default function Page() {
       <section className="py-12 bg-gray-50">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 font-AlbertSans">
+          <h1 className="text-2xl lg:text-3xl font-bold text-gray-900">
             Explore Our Comprehensive <br /> Course Offerings for Aspiring Digital <br />
             Professionals
           </h1>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4  max-w-5xl mx-auto">
           {courses.map((course, index) => (
             <div
               key={index}
-              className="bg-white shadow-md hover:shadow-lg transition rounded-lg overflow-hidden text-center"
+              className="bg-white  hover:shadow-lg transition rounded-lg overflow-hidden text-center"
             >
-              <figure className="relative">
+              <figure className="relative ">
                 <Image
                   src={course.img}
                   alt={course.title}
-                  width={300}
+                  width={250}
                   height={200}
-                  className="w-full h-40 object-cover"
+                  className=" h-40 object-cover  items-center mx-auto   w-full   "
                 />
               </figure>
               <div className="p-4">
@@ -96,7 +96,7 @@ export default function Page() {
                   {/* Enroll Button as Link */}
                   <Link
                     href={course.link}
-                    className="bg-[#021533] text-white py-2 px-4 rounded hover:bg-[#03224d] no-underline"
+                    className="bg-[#061733] text-white py-2 px-4 rounded hover:bg-[#03224d] no-underline"
                   >
                     {course.button}
                   </Link>

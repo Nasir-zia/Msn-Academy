@@ -2,8 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { FaStar, FaCheck } from "react-icons/fa";
-import EnrollNavbar from "../enrollnavbar";
-import Footer from "../component/footer/footer";
+import EnrollNavbar from "../../../enrollnavbar/enrollnavbar";
+import Footer from "../../component/footer/footer";
 
 export default function DataAnalystPage() {
   return (
@@ -24,7 +24,7 @@ export default function DataAnalystPage() {
         {/* Left Column */}
         <div className="lg:col-span-2 space-y-6">
           {/* Includes Box */}
-          <div className="border-2 h-96 rounded-lg p-6">
+          <div className="border-2 rounded-lg p-6">
             <h2 className="font-semibold mb-4 text-gray-600">Includes:</h2>
             <ul className="grid grid-cols-2 gap-2 text-sm text-gray-600">
               <li className="flex items-center gap-2">
@@ -107,7 +107,7 @@ export default function DataAnalystPage() {
         </div>
 
         {/* Right Column */}
-        <div className="border rounded-lg p-4 bg-white shadow-sm">
+        <div className="border rounded-lg p-4 lg:h-96 bg-white shadow-sm">
           <div className="relative w-full h-48 mb-4">
             <Image
               src="/Skills_Required_to_become_a_Data_Analyst.png"

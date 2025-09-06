@@ -57,7 +57,7 @@ export default function ExploreOurComprehensive() {
 
               {/* Buttons */}
               <div className="flex justify-center gap-3 mt-4 flex-wrap">
-                <button className="px-4 py-2 rounded-lg bg-black text-white hover:bg-gray-800 transition">
+                <button className="px-4 py-2 rounded-lg bg-[#061733] text-white hover:bg-gray-800 transition">
                   Enroll now
                 </button>
                 <button className="px-4 py-2 rounded-lg bg-red-600 text-white hover:bg-red-700 transition">

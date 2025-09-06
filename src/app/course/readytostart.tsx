@@ -15,10 +15,10 @@ function UnlockSkill() {
             Enroll in our courses today and unlock your potential in the digital world!
           </p>
           <div className="flex space-x-4">
-            <button className="px-6 py-3 bg-[#021533] text-white font-medium rounded-lg ">
+            <button className="px-6 py-3 bg-[#061733] text-white font-medium rounded-lg ">
               Enroll
             </button>
-            <button className="px-6 py-3 bg-slate-700  text-white font-medium rounded-lg ">
+            <button className="px-6 py-3 bg-gray-300 text-black   font-medium rounded-lg ">
               Contact
             </button>
           
