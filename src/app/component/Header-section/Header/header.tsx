@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header className={`${style.background_image} relative`}>
       {/* Navbar */}
-      <nav className="flex items-center p-4 mx-auto">
+      <nav className="flex items-center justify-between p-4 mx-auto">
         {/* Left: Logo */}
         <div className="flex-shrink-0">
           <Image
@@ -29,7 +29,7 @@ export default function Header() {
           />
         </div>
 
-        {/* Center: Navigation */}
+        {/* Center: Navigation (Desktop Only) */}
         <ul className="hidden md:flex flex-1 justify-center space-x-8 font-medium">
           {navItems.map((item) => (
             <li key={item.name}>
@@ -50,7 +50,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-white text-black px-4 py-2 rounded-lg shadow-md hover:bg-gray-200 transition">
+            <button className="bg-white text-black px-4 py-2 rounded-lg shadow-md hover:bg-gray-200 transition  ">
               Join
             </button>
           </a>
@@ -60,7 +60,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="hidden md:block"
           >
-            <button className="bg-[#061733]  px-4 py-2 rounded-lg text-white transition">
+            <button className="bg-[#061733] px-4 py-2 rounded-lg text-white transition">
               Learn
             </button>
           </a>
@@ -176,7 +176,7 @@ export default function Header() {
           action
         </p>
 
-        <button className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition mt-5 ">
+        <button className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition mt-5">
           Enroll Now
         </button>
       </div>

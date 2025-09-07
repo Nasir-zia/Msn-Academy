@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function StandOutinLearning() {
   return (
-    <section className="bg-white py-16">
+    <section className=" bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center mb-12">
@@ -18,30 +18,32 @@ export default function StandOutinLearning() {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* First Card */}
-          <div className="bg-gray-50 rounded-xl shadow-sm overflow-hidden flex flex-col aspect-square">
-            {/* Text */}
-            <div className="flex flex-col justify-center p-6 flex-1">
-              <h6 className="text-sm font-semibold text-gray-700">Unique</h6>
-              <h2 className="text-xl font-bold text-gray-900 mt-2">
-                Why Choose MSN Academy?
-              </h2>
-              <p className="text-gray-600 mt-2">
-                Personal mentorship sets us apart from competitors.
-              </p>
-              <button className="mt-4 inline-flex items-center text-sm font-medium text-gray-900 hover:underline">
-                Learn <span className="ml-1">→</span>
-              </button>
-            </div>
-            {/* Image */}
-            <div className="relative w-full h-40 md:h-1/2">
-              <Image
-                src="/9.png"
-                alt="Why MSN"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
+         {/* First Card */}
+<div className="bg-gray-50 rounded-xl shadow-sm overflow-hidden flex flex-col lg:flex-row aspect-auto">
+  {/* Text */}
+  <div className="flex flex-col justify-center p-6 flex-1">
+    <h6 className="text-sm font-semibold text-gray-700">Unique</h6>
+    <h2 className="text-xl font-bold text-gray-900 mt-2">
+      Why Choose MSN Academy?
+    </h2>
+    <p className="text-gray-600 mt-2">
+      Personal mentorship sets us apart from competitors.
+    </p>
+    <button className="mt-4 inline-flex items-center text-sm font-medium text-gray-900 hover:underline">
+      Learn <span className="ml-1">→</span>
+    </button>
+  </div>
+  {/* Image */}
+  <div className="relative w-full h-40 lg:w-1/2 lg:h-auto">
+    <Image
+      src="/9.png"
+      alt="Why MSN"
+      fill
+      className="object-cover"
+    />
+  </div>
+</div>
+
 
           {/* Second Card */}
           <div className="bg-gray-50 rounded-xl shadow-sm overflow-hidden flex flex-col aspect-square">

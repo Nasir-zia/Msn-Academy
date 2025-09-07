@@ -92,25 +92,25 @@ export default function ManagementTeam() {
   return (
     <>
       <Head>
-        <title>Management Team</title>
+        <title className="font-medium">Management Team</title>
         <meta name="description" content="Meet our management team" />
       </Head>
       <div className="min-h-screen bg-gray-50 py-12 px-6">
         <div className="text-center mb-12">
-          <p className="text-black font-medium">Our Team</p>
+          <p className="text-black font-bold">Our Team</p>
           <h1 className="text-3xl md:text-4xl font-bold text-black">Management Team</h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3   max-w-7xl   mx-auto ">
           {teamMembers.map((member, index) => (
             <div key={index} className="rounded-xl p-6  transition flex flex-col items-center text-center ">
               <div className="w-28 h-28 mb-4 relative">
                 <Image src={member.image} alt={member.name} fill className="rounded-full object-cover" />
               </div>
-              <h2 className="text-xl font-semibold text-black">{member.name}</h2>
-              <p className="text-sm text-black mb-3">{member.role}</p>
-              <p className="text-black mb-4">{member.description}</p>
+              <h1 className=" font-bold  text-black">{member.name}</h1>
+              <p className=" text-black mb-1 font-bold" >{member.role}</p>
+              <p className="text-black lg:w-72 font-thin">{member.description}</p>
 
-              {/* 👇 Social Icons (always shown) */}
+              {/*  Social Icons (always shown) */}
               <div className="flex space-x-4 mt-3">
                 <a
                   href={member.socials.linkedin || "#"}

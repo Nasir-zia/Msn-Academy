@@ -64,78 +64,78 @@ export default function CertificateForm() {
           Certificate Verification
         </h1>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-          {/* Left Form */}
-          <div className="space-y-6">
-            {/* Role Selection Buttons */}
-            <div>
-              <label className="block text-sm font-medium mb-3">Role</label>
-              <div className="flex gap-3">
-                {["student", "intern", "na"].map((r) => (
-                  <button
-                    key={r}
-                    onClick={() => setRole(r as "student" | "intern" | "na")}
-                    className={`px-4 py-2 rounded-lg border shadow ${
-                      role === r
-                        ? "bg-[#061733] text-white"
-                        : "bg-white text-black border-gray-300"
-                    }`}
-                  >
-                    {r === "student"
-                      ? "Student"
-                      : r === "intern"
-                      ? "Intern"
-                      : "N/A"}
-                  </button>
-                ))}
-              </div>
-            </div>
+     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+  {/* Left Form */}
+  <div className="space-y-6 lg:justify-self-start w-full max-w-md">
+    {/* Role Selection Buttons */}
+    <div>
+      <label className="block text-sm font-medium mb-3">Role</label>
+      <div className="flex gap-3">
+        {["student", "intern", "na"].map((r) => (
+          <button
+            key={r}
+            onClick={() => setRole(r as "student" | "intern" | "na")}
+            className={`px-4 py-2 rounded-lg border shadow ${
+              role === r
+                ? "bg-[#061733] text-white"
+                : "bg-white text-black border-gray-300"
+            }`}
+          >
+            {r === "student"
+              ? "Student"
+              : r === "intern"
+              ? "Intern"
+              : "N/A"}
+          </button>
+        ))}
+      </div>
+    </div>
 
-            {/* Certificate ID Input */}
-            <div>
-              <label className="block text-sm font-medium mb-2">
-                Enter your Certificate ID
-              </label>
-              <input
-                type="text"
-                value={code}
-                onChange={(e) => setCode(e.target.value)}
-                placeholder={`Enter ${role} certificate ID`}
-                className="border rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-[#061733] bg-white"
-              />
-            </div>
+    {/* Certificate ID Input */}
+    <div>
+      <label className="block text-sm font-medium mb-2">
+        Enter your Certificate ID
+      </label>
+      <input
+        type="text"
+        value={code}
+        onChange={(e) => setCode(e.target.value)}
+        placeholder={`Enter ${role} certificate ID`}
+        className="border rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-[#061733] bg-white"
+      />
+    </div>
 
-            {/* Verify Button */}
-            <button
-              onClick={handleCheck}
-              disabled={!code}
-              className="bg-[#061733] text-white px-4 py-2 rounded-lg w-full shadow hover:opacity-90 disabled:bg-gray-400"
-            >
-              Verify Certificate
-            </button>
+    {/* Verify Button */}
+    <button
+      onClick={handleCheck}
+      disabled={!code}
+      className="bg-[#061733] text-white px-4 py-2 rounded-lg w-full shadow hover:opacity-90 disabled:bg-gray-400"
+    >
+      Verify Certificate
+    </button>
 
-            {/* Details Section */}
-            <div className="mt-4 text-gray-600 text-sm border-t pt-3">
-              Your certificate will include your full name, course name or intern
-              department, completion date, and a unique certificate number. You
-              can also preview your certificate once verified.
-            </div>
+    {/* Details Section */}
+    <div className="mt-4 text-gray-600 text-sm border-t pt-3">
+      Your certificate will include your full name, course name or intern
+      department, completion date, and a unique certificate number. You
+      can also preview your certificate once verified.
+    </div>
 
-            {/* Error Message */}
-            {error && <ErrorMessage message={error} />}
-          </div>
+    {/* Error Message */}
+    {error && <ErrorMessage message={error} />}
+  </div>
 
-          {/* Right Certificate Preview */}
-          <div className="flex justify-center">
-            {certificate ? (
-              <CertificateCard certificate={certificate} />
-            ) : (
-              <div className="border rounded-lg p-6 w-96 text-center text-black">
-                No certificate preview yet
-              </div>
-            )}
-          </div>
-        </div>
+  {/* Right Certificate Preview */}
+  <div className="flex justify-center">
+    {certificate ? (
+      <CertificateCard certificate={certificate} />
+    ) : (
+      <div className="border rounded-lg p-6 w-96 text-center text-black">
+        No certificate preview yet
+      </div>
+    )}
+  </div>
+</div>
 
         {/* 🔹 Steps Section with React Icons */}
         <div className="mt-16 text-center">
