@@ -12,13 +12,13 @@ export default function CertificateCard({ certificate }: { certificate: Certific
       flex flex-col justify-between 
       overflow-hidden shadow bg-[#f8f3e9]
     ">
-      
+
       {/* ===== HEADER ===== */}
       <div className="flex justify-between items-center px-2 sm:px-4 md:px-6">
         {/* Left Logo */}
-        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative"> 
+        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative">
           <Image
-            src="/Screenshot_2025-09-07_102350-removebg-preview.png" 
+            src="/Screenshot_2025-09-07_102350-removebg-preview.png"
             alt="MSN Academy Logo"
             fill
             className="object-contain"
@@ -26,7 +26,7 @@ export default function CertificateCard({ certificate }: { certificate: Certific
         </div>
 
         {/* Center Title */}
-        <div className="text-center flex-1 mx-2 sm:mx-4 md:mx-6"> 
+        <div className="text-center flex-1 mx-2 sm:mx-4 md:mx-6">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase text-indigo-900 tracking-wide">
             Internship
           </h1>
@@ -36,9 +36,9 @@ export default function CertificateCard({ certificate }: { certificate: Certific
         </div>
 
         {/* Right Badge */}
-        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative"> 
+        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative">
           <Image
-            src="/Screenshot_2025-09-07_105641-removebg-preview.png" 
+            src="/Screenshot_2025-09-07_105641-removebg-preview.png"
             alt="Award Badge"
             fill
             className="object-contain"
@@ -47,7 +47,7 @@ export default function CertificateCard({ certificate }: { certificate: Certific
       </div>
 
       {/* ===== Recipient ===== */}
-      <div className="text-center mt-4 sm:mt-6"> 
+      <div className="text-center mt-4 sm:mt-6">
         <p className="text-gray-700 text-xs uppercase tracking-wide">
           Proudly Presented To
         </p>
@@ -81,7 +81,7 @@ export default function CertificateCard({ certificate }: { certificate: Certific
       <div className="flex justify-between items-center px-6 sm:px-10 md:px-12 mb-8 md:mb-16">
         {/* Left Signature */}
         <div className="text-center">
-          <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 relative mx-auto mb-1"> 
+          <div className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-12 relative mx-auto mb-1">
             <Image
               src="/Screenshot_2025-09-07_113839-removebg-preview.png"
               alt="Signature Left"
@@ -97,7 +97,7 @@ export default function CertificateCard({ certificate }: { certificate: Certific
         <div className="text-center">
           <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 relative mx-auto">
             <Image
-              src="/Screenshot_2025-09-07_123459-removebg-preview.png"  
+              src="/Screenshot_2025-09-07_123459-removebg-preview.png"
               alt="Verified Badge"
               fill
               className="object-contain"
